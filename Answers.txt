@@ -69,3 +69,7 @@
 
     Kotlinde Null safety ile özellikle Javada sıkça karşılaşılan NPE hatasının önüne büyük ölçüde geçilmiş, çıkabilecek hataları azaltıp, performansı arttırmıştır.
     Kod okunabilirliği artmıştır (bknz elvis operatörü). Güvenilirlik artmıştır.
+
+- Bir değişkene null değer atanır ve tip belirtilmezse Kotlin bu değişkeni nasıl yorumlar?
+
+-> IDE bu değişkeni Nothing? olarak işaretler. Tip çıkarımı yapamaz.
