@@ -13,3 +13,12 @@
 -> Immutable demek değeri hiçbir türlü değişmeyecek ilk değer neyse o kalacak demektir. ReadOnly de ise değer okunabilir ama set edilemeyen demektir.
    val değişkenlerde ilk değeri her zaman aynı kalacak diye bir zorunluluk yoktur. Örneğin bir sayfadaki değişken her servise çıkıldığında farklı sonuçla eşitleniyorsa
    burada ilk değer aynı kalmaz. val değişkenler bundan dolayı readonlydir.
+
+- "Tip Çıkarımı" (Type inference) kavramını açıklayın. Hangi durumlarda tip belirtmek kesin olarak gereklidir?
+
+-> Type inference açık açık bir değişkenin tipini belirtmeyip ama değerini atadığımızda IDE nin kendisinin değişkenin tipini bilmesidir. Daha kısa ve anlaşılır kod
+
+    val age = 26 | val name = "meto" gibi 
+
+   Değişkenin değerini daha sonra vereceksek (lateinit var veya fonksiyonunun içinde var val, class içinde örneğin en üstte yapsak IDE kızıyor.) kesinlikle tip vermek gerekir. 
+   Burada bir istisna olarak eğer bir değişken byte veya short aralığında olsa bile IDE tip çıkarımı yaparken otomatik olarak Int kabul ediyor !!! 
