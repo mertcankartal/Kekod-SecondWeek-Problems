@@ -30,3 +30,17 @@
    tanımlarsak referans tipli class olarak derlenirler. Örneğin :
 
    val age : Int? = 25 yaptığımızda primitive tip olarak davranmazlar. 
+
+- "Tip Güvenliği" (Type Safety) kavramını açıklayın.
+
+-> Kotlin type safety bir dildir. Type safety her değişkenin belli bir tipe sahip olması ve bu tipe doğru değer ataması yapılması denir.
+   Tip güvenliği için bazı parametreler vardır :
+   Type Inference(tip çıkarımı) : IDE nin bir değişkenin tipini otomatik belirleyebilmesidir.
+   Eğer bir değişkeni nullable yapmak istiyorsak tip tanımlaması yaparken ? ile nullable yapabiliriz. (val x : String? gibi) 
+
+   Null safety : Kotlin değişkenlerin null referanslarını önlemek için bazı yöntemleri vardır. NPE dediğimiz NullPointerException hataların önüne geçmek için
+   bazı yöntemler vardır.  
+
+   Smart Cast : Bir değişkenin tipini başlangıçta tanımlamayıp daha sonrasında gelen değere göre olabileceği tipi kontrol edip ona göre o tipin özelliklerini kullanabilmesidir.
+   is keywordü ile bu kontrolü yapabiliriz.  if ( x is String ) veya when ile kontrolü yapıp tipi kontrol ettikten sonra IDE o değişken için eşleştiği tipin özelliklerini 
+   kullandırır.
