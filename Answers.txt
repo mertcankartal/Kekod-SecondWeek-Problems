@@ -1,0 +1,4 @@
+- `val` ile `var` arasındaki fark nedir?
+
+-> var değiştirilebilir(mutable). val ise ilk değeri değiştirilemez(read only - immutable değil bilenen bir yanlıştır.)
+   Performans farkı yok denecek kadar azdır. Eğer multi threadlerde çalışıyorsak val daha performanslıdır. Ama akademik levelda var daha performanslıdır. 
