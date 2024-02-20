@@ -84,3 +84,14 @@
 -> Değeri olan nullable bir değişken hem değeri hem null olma ihtimalini bellekte tutar. nullable olan null bir değişken de bellekte yer kaplar. Null olması değil
    nullable olma ihtimali bellekte tutulur. Yani değeri olmasa bile nullable ihtimalini tutan değer bellekte azda olsa yer tutar. Ama nullable olup normal bir değeri 
    olan değişkenler nullable olup null olan değişkenlere göre bellekte daha fazla yer tutarlar.
+
+- Nullable bir değişkenle çalışırken hangi operatörleri kullanırız? Bu operatörlerin kullanım farkları nelerdir? Hangisini ne zaman kullanmak daha anlamlıdır?
+
+-> ?. -> bir değişkenin null olup olmadığını kontrol eder. Eğer null ise devamındaki işlem yapılmaz. Bu şekilde hata da almayız. Çünkü null değişkenle işlem yapmamış oluruz.
+         Örneğin val x : Int? şeklinde bir tanımlama yaptıktan sonra x?.plus(5) şeklinde bir işlem yapmak istersek x değeri null değilse bu işlem yapılır.
+    
+    !! -> Bu kullanım biraz risklidir. Gerek olmadıkça kullanmamaya çalışalım. Bu kullanımda kullandığımız değişkenin kesinlikle null olmayacağını garanti ediyoruz
+          anlamına geliyor. Eğerki değişken null gelirse hata alırız (NPE). Eğer uygulamanın crash olması yanlış değer göstermesinden daha iyiyse bunu kullanabiliriz.
+
+    ?: -> Burada da değişkenin null gelmesi durumda alternatif bir değer verilebiliyor. Bu kullanımla da NPE nin önüne geçebiliyoruz. Örneğin :
+          val xCar : String? = car.name ?: "bmw" bunun anlamı : eğer car.name null değilse xCarın değeri car.name olacak ama nullsa "bmw" olacak.
