@@ -48,3 +48,24 @@
 - Bir değişkeni nullable yapmak için ne yapmalıyız?
 
 -> Değişkeni tanımlarken tipin sonuna ? yazarak nullable yapabiliriz. Örnek olarak var name : String? = null yaparak name değişkenini nullable yapabiliriz.
+
+- "Null Güvenliği" (Null Safety) kavramını açıklayın.
+
+-> Kotlinde Null Safety çok güçlüdür. Null safety demek dilin null referanslarıyla daha güvenli bir şekilde başa çıkmasını sağlayan bir özelliktir. 
+   Bu özellikle NPE hatalarını önler. Null bir değişkenin nesnesi bellekte bulunmaz ve hiçbir şeye işaret etmez demektir. Eğer bu nesneye erişmeye çalışırsak NPE hatası alırız.
+
+   Bir değişkeni Nullable yapmak istersek tipin sonuna ? koyarak yapabiliriz. Non-nullable değişkenler normal tip tanımlarıyla yapılır.
+
+   Null check değişkenin null olup olmadığı kontrolüdür. Bunu yapmak için ? , !! ve elvis (?:) operatörünü kullanabiliriz.
+
+    ?. -> bir değişkenin null olup olmadığını kontrol eder. Eğer null ise devamındaki işlem yapılmaz. Bu şekilde hata da almayız. Çünkü null değişkenle işlem yapmamış oluruz.
+         Örneğin val x : Int? şeklinde bir tanımlama yaptıktan sonra x?.plus(5) şeklinde bir işlem yapmak istersek x değeri null değilse bu işlem yapılır.
+    
+    !! -> Bu kullanım biraz risklidir. Gerek olmadıkça kullanmamaya çalışalım. Bu kullanımda kullandığımız değişkenin kesinlikle null olmayacağını garanti ediyoruz
+          anlamına geliyor. Eğerki değişken null gelirse hata alırız (NPE) 
+
+    ?: -> Burada da değişkenin null gelmesi durumda alternatif bir değer verilebiliyor. Bu kullanımla da NPE nin önüne geçebiliyoruz. Örneğin :
+          val xCar : String? = car.name ?: "bmw" bunun anlamı : eğer car.name null değilse xCarın değeri car.name olacak ama nullsa "bmw" olacak.
+
+    Kotlinde Null safety ile özellikle Javada sıkça karşılaşılan NPE hatasının önüne büyük ölçüde geçilmiş, çıkabilecek hataları azaltıp, performansı arttırmıştır.
+    Kod okunabilirliği artmıştır (bknz elvis operatörü). Güvenilirlik artmıştır.
