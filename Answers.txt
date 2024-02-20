@@ -8,3 +8,8 @@
 -> var değişkenin set fonksiyonunu private yapabiliriz. 
    Amaç : Bir class içindeki değişkene dışarıdan değişimi engelleyip sadece class içinde değişiklik yaptırabilmek.
 
+- "Değişmez" (Immutable) ve "Salt Okunur" (ReadOnly) kavramlarını açıklayın. `val` değişkenler neden aslında "değişmez" değil de "salt okunur" olarak açıklanmalıdır?
+
+-> Immutable demek değeri hiçbir türlü değişmeyecek ilk değer neyse o kalacak demektir. ReadOnly de ise değer okunabilir ama set edilemeyen demektir.
+   val değişkenlerde ilk değeri her zaman aynı kalacak diye bir zorunluluk yoktur. Örneğin bir sayfadaki değişken her servise çıkıldığında farklı sonuçla eşitleniyorsa
+   burada ilk değer aynı kalmaz. val değişkenler bundan dolayı readonlydir.
