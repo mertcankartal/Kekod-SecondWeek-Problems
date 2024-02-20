@@ -22,3 +22,11 @@
 
    Değişkenin değerini daha sonra vereceksek (lateinit var veya fonksiyonunun içinde var val, class içinde örneğin en üstte yapsak IDE kızıyor.) kesinlikle tip vermek gerekir. 
    Burada bir istisna olarak eğer bir değişken byte veya short aralığında olsa bile IDE tip çıkarımı yaparken otomatik olarak Int kabul ediyor !!! 
+
+- Kotlin'de tüm değişkenlerin sınıf olarak bulunması, "ilkel tip" (primitive type) olmadıkları anlamına gelir mi? Arka planda neler oluyor?
+
+-> Primitive değişkenler class olarak görünür fakat özel optimizasyonlarla javadaki primitive tipler gibi davranır. Kotlindeki Int javadaki int gibi.
+   KotlinByteCode a çevirdiğimizde bu değişkenlerin javadaki primitive tipler olarak döndüğünü görebiliriz. Ama primitive değişkenleri nullable olarak 
+   tanımlarsak referans tipli class olarak derlenirler. Örneğin :
+
+   val age : Int? = 25 yaptığımızda primitive tip olarak davranmazlar. 
