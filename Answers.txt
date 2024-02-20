@@ -73,3 +73,8 @@
 - Bir değişkene null değer atanır ve tip belirtilmezse Kotlin bu değişkeni nasıl yorumlar?
 
 -> IDE bu değişkeni Nothing? olarak işaretler. Tip çıkarımı yapamaz.
+
+- İlkel bir değişkenin nullable olması ile null değer alamaması arasında bellek yönetimi açısından nasıl farklar vardır?
+
+-> Nullable değişkenler normal değerlerinin dışında bir de null olabilme ihtimallerinden ötürü ekstra bir kontrol daha gerektirdiği için ekstra bir maliyet içerir.
+   Bellekte daha fazla yer tutar ama null olmayan değişkenlerin sadece kendi değerleri bellekte tutulur. 
