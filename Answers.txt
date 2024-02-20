@@ -78,3 +78,9 @@
 
 -> Nullable değişkenler normal değerlerinin dışında bir de null olabilme ihtimallerinden ötürü ekstra bir kontrol daha gerektirdiği için ekstra bir maliyet içerir.
    Bellekte daha fazla yer tutar ama null olmayan değişkenlerin sadece kendi değerleri bellekte tutulur. 
+
+- Nullable bir değişkenin bir değere sahip olması ile null olması arasında bellek yönetimi açısından nasıl bir fark vardır? Null değer almış bir değişken bellekte yer kaplamaz diyebilir miyiz?
+
+-> Değeri olan nullable bir değişken hem değeri hem null olma ihtimalini bellekte tutar. nullable olan null bir değişken de bellekte yer kaplar. Null olması değil
+   nullable olma ihtimali bellekte tutulur. Yani değeri olmasa bile nullable ihtimalini tutan değer bellekte azda olsa yer tutar. Ama nullable olup normal bir değeri 
+   olan değişkenler nullable olup null olan değişkenlere göre bellekte daha fazla yer tutarlar.
