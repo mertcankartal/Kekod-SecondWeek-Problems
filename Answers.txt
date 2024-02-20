@@ -44,3 +44,7 @@
    Smart Cast : Bir değişkenin tipini başlangıçta tanımlamayıp daha sonrasında gelen değere göre olabileceği tipi kontrol edip ona göre o tipin özelliklerini kullanabilmesidir.
    is keywordü ile bu kontrolü yapabiliriz.  if ( x is String ) veya when ile kontrolü yapıp tipi kontrol ettikten sonra IDE o değişken için eşleştiği tipin özelliklerini 
    kullandırır.
+
+- Bir değişkeni nullable yapmak için ne yapmalıyız?
+
+-> Değişkeni tanımlarken tipin sonuna ? yazarak nullable yapabiliriz. Örnek olarak var name : String? = null yaparak name değişkenini nullable yapabiliriz.
