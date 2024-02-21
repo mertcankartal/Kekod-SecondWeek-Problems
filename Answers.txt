@@ -179,4 +179,9 @@
 -> Bellekte saklanan verilerin bitlerine uygulanan operatörlerdir. Kontrol amaçlı kullanılırlar.
    & and -> ve anlamına gelir.
    | or -> veya anlamına gelir.
-   not -> tersini yapar. biri 0 sıfırı 1 yapar. 
+   not -> tersini yapar. biri 0 sıfırı 1 yapar.
+
+- Kotlin'de büyük sayılarla çalışırken hangi ek türlerden yararlanılır ve bu türlerin sınırları nelerdir?
+
+-> BigInteger ve BigDecimal. Sınırsız büyüklük ve hassasiyete sahiptirler. Bunlar kullanılırken bellek kullanımı artar ve performans maliyetine yol açabilir.
+ 
