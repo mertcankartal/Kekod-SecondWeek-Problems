@@ -118,4 +118,14 @@
 - Float değişken oluştururken `F` ve `f` harfleri varken, Long değişken oluştururken neden küçük `l` harfi yoktur?
 
 -> Kod yazarken Long değişkenler için küçük l harfi 1 gibi durup karışıklığa yol açabileceği için yoktur.
+
+- Tek duyarlıklı (Single precision) ve Çift duyarlıklı (Double precision) kavramlarını açıklayın.
+
+-> Tek duyarlıklı : Float için kullanılır. Bellekte 32 bit yer kaplarlar. Floatın hassasiyeti virgülden sonra 6 7 basamaktır. Eğer sayının küsüratı uzunsa 
+    yuvarlama yapar.
+
+    Çift duyarlıklı : Double için kullanılır. Bellekte 64 bit yer kaplarlar. Double hassasiyeti virgülden sonra 15 basamaktır. Uzun küsüratlar için double kullanmak
+    daha güvenlidir.
+
+    Kotlin ondalık sayılar için default olarak Double tip çıkarımı yapar. Float yapmak istersek f veya F kullanarak yapabiliriz. val boy = 1.71F gibi. 
     
