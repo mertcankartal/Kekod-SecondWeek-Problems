@@ -152,3 +152,7 @@
 - "Geleneksel Notasyon" (Conventional Notation) gösterimi nasıl yapılır?
 
 -> En basit değişken tanımlama halidir. x = 34 gibi float için y = 3.14f gibi.
+
+- Sayısal değişkenlerde alt çizgi (underscore) nasıl kullanılır? Kotlin bunu nasıl yorumlar?
+
+-> sayılar daha okunabilir olsun diye kullanılır. Kotlin bu çizgileri dikkate almaz 1_000_000 gibi . , kullanılmaz sadece _ kullanılır.
