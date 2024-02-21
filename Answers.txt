@@ -164,4 +164,8 @@
 - `===` operatörü ile karşılaştırma yaparken Byte değer aralığı neden önemlidir? Kotlin bu aralığa göre neden özel bir davranış sergiler?
 
 -> Byte değer aralığına özel olarak Kotlin bellekte buradaki her değeri bellekte tasarruf için aynı nesneye referans eder. Bu sadece Byte için geçerlidir.
-   Burada === ile referans karşılaştırması yaptığımız byte aralığında her değişken için true döner. Byte aralığı dışında her şey false döner. 
+   Burada === ile referans karşılaştırması yaptığımız byte aralığında her değişken için true döner. Byte aralığı dışında her şey false döner.
+
+- Sayısal değişkenlerde hangi matematiksel operatörler kullanılabilir?
+
+-> + - / * % = toplama,çıkarma,bölme,çarpma,mod alma işlemleri yapılabilir.
