@@ -108,4 +108,10 @@
                 değerini alırsa overflow hatası olur.
 
    rounding -> Yuvarlama hatasıdır. Bir değişkenin değerinin tipinin sahip olduğu ondalık basamak aralığından daha fazla olmasında ortaya çıkar.
-               Örneğin Float olarak belirttiğimiz bir değişkenin ondalık kısmı Double aralığındaysa burada rounding hatası alırız.  
+               Örneğin Float olarak belirttiğimiz bir değişkenin ondalık kısmı Double aralığındaysa burada rounding hatası alırız.
+
+- Eğer bir değişkene tip belirtimi yapılmaz ve bir değer atanırsa, Kotlin tip çıkarımını nasıl yapar?
+
+-> Default olarak Int değer aralığından büyük olanları long olarak tanımlar fakat Byte veya Short aralığında olabilecek değişkenler de varsa onları tip çıkarımı 
+   yaparken Int olarak işaretler. Metin varsa String olarak işaretler.
+    
