@@ -169,3 +169,7 @@
 - Sayısal değişkenlerde hangi matematiksel operatörler kullanılabilir?
 
 -> + - / * % = toplama,çıkarma,bölme,çarpma,mod alma işlemleri yapılabilir.
+
+- Sayısal değişkenlerde hangi karşılaştırma operatörleri kullanılabilir?
+
+-> < > == <= >= != --  küçüktür,büyüktür,eşittir,küçük eşittir,büyük eşittir,eşit değildir şeklinde kullanılabilir.
