@@ -129,3 +129,6 @@
 
     Kotlin ondalık sayılar için default olarak Double tip çıkarımı yapar. Float yapmak istersek f veya F kullanarak yapabiliriz. val boy = 1.71F gibi. 
     
+- Double ve Float değişkenlerle çalışırken ondalık ayıracı olarak hangi işaretler kullanılır? Bu ayıraçların kullanımında nelere dikkat etmek gerekir?
+
+-> . işareti ondalık ayıracı olarak kullanılır. (Para birimlerinde try ve usd de , ve . farklı kullanılır oralarda dikkat !!!)
