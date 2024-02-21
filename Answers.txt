@@ -156,3 +156,7 @@
 - Sayısal değişkenlerde alt çizgi (underscore) nasıl kullanılır? Kotlin bunu nasıl yorumlar?
 
 -> sayılar daha okunabilir olsun diye kullanılır. Kotlin bu çizgileri dikkate almaz 1_000_000 gibi . , kullanılmaz sadece _ kullanılır.
+
+- `==` ile neyi karşılaştırırız? `===` ile neyi karşılaştırırız?
+
+-> == ile değişkenlerin değerini karşılaştırırız. === ile referanslarını karşılaştırırız.
