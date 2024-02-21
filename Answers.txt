@@ -173,3 +173,10 @@
 - Sayısal değişkenlerde hangi karşılaştırma operatörleri kullanılabilir?
 
 -> < > == <= >= != --  küçüktür,büyüktür,eşittir,küçük eşittir,büyük eşittir,eşit değildir şeklinde kullanılabilir.
+
+- Bit düzeyinde operatörler (Bitwise operators) nelerdir? Ne amaçla kullanılır? Kotlin'de bunları nasıl kullanabilirsiniz?
+
+-> Bellekte saklanan verilerin bitlerine uygulanan operatörlerdir. Kontrol amaçlı kullanılırlar.
+   & and -> ve anlamına gelir.
+   | or -> veya anlamına gelir.
+   not -> tersini yapar. biri 0 sıfırı 1 yapar. 
