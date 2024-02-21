@@ -143,3 +143,8 @@
 -> Ondalıkta ondalık sayılar direkt tanımlayabiliriz. 1234 gibi
    Hexadecimalde 0x ile birlikte ondalık sayılar yazılır. 0-9 ile A-F harflerinden oluşur. 0xA2 
    Binaryde 0b veya 0B ile birlikte yazılır. sonuna 0 veya 1 gelir. 0b010011 gibi.
+
+- Sekizlik (Octal) değişkenler Java'da nasıl tanımlanır? Kotlin'de Sekizlik değişken tanımlanabilir mi?
+
+-> Javada değişkeni 0 ile başlatmak yeterlidir. 013579 gibi. Kotlinde özel olarak Octal değişken tanımlama yoktur. Özel fonksiyonla parse edilir.
+    Integer.parseInt(256,8) gibi. Bu değişkeni onluk bir değişkene atamalıyız. Çünkü sekizlik sayı tanımlaması yok.
