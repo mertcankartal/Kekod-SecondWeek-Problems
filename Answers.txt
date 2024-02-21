@@ -184,4 +184,9 @@
 - Kotlin'de büyük sayılarla çalışırken hangi ek türlerden yararlanılır ve bu türlerin sınırları nelerdir?
 
 -> BigInteger ve BigDecimal. Sınırsız büyüklük ve hassasiyete sahiptirler. Bunlar kullanılırken bellek kullanımı artar ve performans maliyetine yol açabilir.
+
+- Double ve Float değişkenler kullanılırken "yuvarlama" davranışı nasıldır? Bu nasıl değiştirilebilir?
+
+-> Yuvarlama davranışı, Java'nın IEEE 754 standartlarını uygular. BigDecimal kullanarak yuvarlama hatası olabilecek durumları ortadan kaldırabiliriz. toPrecision
+   fonksiyonuyla istediğimiz hassasiyeti verebiliriz. 
  
