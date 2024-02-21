@@ -148,3 +148,7 @@
 
 -> Javada değişkeni 0 ile başlatmak yeterlidir. 013579 gibi. Kotlinde özel olarak Octal değişken tanımlama yoktur. Özel fonksiyonla parse edilir.
     Integer.parseInt(256,8) gibi. Bu değişkeni onluk bir değişkene atamalıyız. Çünkü sekizlik sayı tanımlaması yok.
+
+- "Geleneksel Notasyon" (Conventional Notation) gösterimi nasıl yapılır?
+
+-> En basit değişken tanımlama halidir. x = 34 gibi float için y = 3.14f gibi.
