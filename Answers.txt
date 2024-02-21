@@ -114,4 +114,8 @@
 
 -> Default olarak Int değer aralığından büyük olanları long olarak tanımlar fakat Byte veya Short aralığında olabilecek değişkenler de varsa onları tip çıkarımı 
    yaparken Int olarak işaretler. Metin varsa String olarak işaretler.
+
+- Float değişken oluştururken `F` ve `f` harfleri varken, Long değişken oluştururken neden küçük `l` harfi yoktur?
+
+-> Kod yazarken Long değişkenler için küçük l harfi 1 gibi durup karışıklığa yol açabileceği için yoktur.
     
