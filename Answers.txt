@@ -95,3 +95,17 @@
 
     ?: -> Burada da değişkenin null gelmesi durumda alternatif bir değer verilebiliyor. Bu kullanımla da NPE nin önüne geçebiliyoruz. Örneğin :
           val xCar : String? = car.name ?: "bmw" bunun anlamı : eğer car.name null değilse xCarın değeri car.name olacak ama nullsa "bmw" olacak.
+
+
+### Sayılar
+- Kaç farklı tipte "number" sınıfı miras alan "alt sınıf" (child class) vardır? Bunların değer aralıkları neden önemlidir?
+
+-> Byte, Short, Int, Long, Double, Float. Bunların değer aralıkları bellek kullanımı ve performans açısından önemlidir. Hepsinin boyutu birbirinden farklıdır.
+   Doğru tip vermek önemlidir. Long değer aralığında olabilecek bir değişkene Int vermek hatalara yol açabilir. Hem veri kaybının önüne geçilir hem de gereksiz
+   bellek kullanımının önüne geçilir. Alınabilecek hatalar aşağıdadır:
+
+   overflow ->  Bir değişkenin verildiği tipin aralığından daha büyük veya daha küçük gelmesi durumunda ortaya çıkar. Örneğin Byte tipini verdiğimiz değişken 128
+                değerini alırsa overflow hatası olur.
+
+   rounding -> Yuvarlama hatasıdır. Bir değişkenin değerinin tipinin sahip olduğu ondalık basamak aralığından daha fazla olmasında ortaya çıkar.
+               Örneğin Float olarak belirttiğimiz bir değişkenin ondalık kısmı Double aralığındaysa burada rounding hatası alırız.  
